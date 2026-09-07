@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Data / generated files
+*.csv
+*.jsonl
+*.parquet
+*.log
+output/
+tmp/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Airflow
+logs/
+
+# dbt
+target/
+dbt_packages/
+
+# Secrets
+*.pem
+*.key
