@@ -33,6 +33,66 @@ test_none = None
 vr_mutable = [1, 2, 3]
 vr_immutable = 10
 
+# Example of arithmetic operators
+number_a = 10
+number_b = 3
+print(f"Arithmetic: addition={number_a + number_b}")
+print(f"Arithmetic: subtraction={number_a - number_b}")
+print(f"Arithmetic: multiplication={number_a * number_b}")
+print(f"Arithmetic: division={number_a / number_b}")
+print(f"Arithmetic: floor division={number_a // number_b}")
+print(f"Arithmetic: remainder={number_a % number_b}")
+print(f"Arithmetic: exponentiation={number_a ** number_b}")
+
+# Example of comparison operators
+print(f"Comparison: 10 == 3 -> {number_a == number_b}")
+print(f"Comparison: 10 != 3 -> {number_a != number_b}")
+print(f"Comparison: 10 > 3 -> {number_a > number_b}")
+print(f"Comparison: 10 >= 3 -> {number_a >= number_b}")
+print(f"Comparison: 10 < 3 -> {number_a < number_b}")
+print(f"Comparison: 10 <= 3 -> {number_a <= number_b}")
+
+# Example of logical operators
+has_data = True
+has_permission = False
+print(f"Logical: has_data and has_permission -> {has_data and has_permission}")
+print(f"Logical: has_data or has_permission -> {has_data or has_permission}")
+print(f"Logical: not has_permission -> {not has_permission}")
+
+# Example of assignment operators
+total = 10
+total += 5
+total -= 2
+total *= 2
+total /= 2
+total //= 3
+total %= 4
+total **= 2
+print(f"Assignment operators result: {total}")
+
+# is checks object identity; == checks value equality
+first_numbers = [1, 2, 3]
+second_numbers = [1, 2, 3]
+same_numbers = first_numbers
+print(f"is vs == (different objects): {first_numbers == second_numbers}, {first_numbers is second_numbers}")
+print(f"is vs == (same object): {first_numbers == same_numbers}, {first_numbers is same_numbers}")
+
+# isinstance() can validate more than one accepted type
+raw_value = 42
+if isinstance(raw_value, (int, float)):
+    print("raw_value is an int or a float")
+
+# Mutable objects can change through another reference; immutable values cannot.
+original_rows = ["ready"]
+rows_alias = original_rows
+rows_alias.append("processed")
+print(f"Mutable alias shares changes: {original_rows}")
+
+original_status = "ready"
+status_alias = original_status
+status_alias += "-processed"
+print(f"Immutable reassignment creates a new value: original={original_status}, alias={status_alias}")
+
 # Example of conversion of variable types
 test_str_to_int = int("10")
 test_int_to_str = str(10)
