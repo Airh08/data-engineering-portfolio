@@ -1,0 +1,14 @@
+{
+  "id": 849201,
+  "uuid": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "username": "coder_x99",
+  "isActive": true,
+  "score": 42.75,
+  "roles": ["admin", "moderator", "user"],
+  "profile": {
+    "firstName": "Alex",
+    "lastName": "Smith",
+    "country": "Canada"
+  },
+  "lastLogin": "2026-06-15T10:30:00Z"
+}
