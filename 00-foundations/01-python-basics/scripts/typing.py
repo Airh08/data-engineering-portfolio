@@ -1,4 +1,4 @@
-# varibvales annotation
+# varibales annotation
 test_str: str = "This is a string"
 test_int: int = 10
 test_float: float = 10.5
