@@ -17,7 +17,11 @@ test_list_empty = []
 # Example variable type dict
 
 test_dict = {1:'first', 2:'second', 3:'third'}
-test_dcit_empty = []
+test_dict_empty = {}
+
+# Example variable type tuple
+test_tuple = (1, 2, 3)
+twest_tuple_empty = ()
 
 # print variable values
 print(test_str)
@@ -25,3 +29,4 @@ print(test_int)
 print(test_float)
 print(test_list)
 print(test_dict)
+print(test_tuple)
